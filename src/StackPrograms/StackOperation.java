@@ -20,7 +20,6 @@ public class StackOperation {
 				System.out.println("3: display all data from stack");
 				System.out.println("4 :for Exist Program");
 				ch=s.nextInt();
-				
 				switch(ch) 
 				{
 				case 1:
@@ -28,7 +27,6 @@ public class StackOperation {
 					 int val=s.nextInt();
 					 st.push(val);
 					break;
-					
 					
 				case 2:
 					boolean b=st.isEmpty();
