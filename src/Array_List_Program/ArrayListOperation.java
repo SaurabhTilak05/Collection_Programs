@@ -13,7 +13,6 @@
 package Array_List_Program;
 import java.util.*;
 public class ArrayListOperation {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		ArrayList al=new ArrayList();
@@ -58,7 +57,6 @@ public class ArrayListOperation {
 					System.out.println("Element not found");
 				}
 				break;
-				
 				
 			case 4:
 				System.out.println("Enter Value to search");
@@ -108,7 +106,6 @@ public class ArrayListOperation {
 				System.out.println("You enter Wrong Choice");
 				
 				break;
-				
 			}
 		}while(ch!=8);
 		
