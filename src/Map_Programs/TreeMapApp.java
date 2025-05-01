@@ -8,15 +8,11 @@ public class TreeMapApp {
 		map.put(2, "MNO");
 		map.put(3, "PQR");
 		map.put(4, "RST");
-		
-		
 		Set<Map.Entry> es=map.entrySet();
 		for(Map.Entry e:es)
 		{
 			System.out.println(e.getKey()+"\t"+e.getValue());
 		}
-				
-
 	}
 
 }
