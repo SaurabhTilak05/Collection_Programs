@@ -13,8 +13,6 @@ public class LinkedHashMapApp {
 			for(Map.Entry e:es)
 			{
 				System.out.println(e.getKey()+"\t"+e.getValue());
-			}
-				
+			}			
 	}
-
 }
