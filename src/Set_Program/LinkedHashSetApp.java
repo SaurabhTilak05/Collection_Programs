@@ -4,6 +4,7 @@ public class LinkedHashSetApp {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
+		System.out.println("Enter Data in LinkedashSet");
 		LinkedHashSet set=new LinkedHashSet();
 		for(int i=0;i<10;i++)
 		{
