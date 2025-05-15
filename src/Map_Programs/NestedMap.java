@@ -34,7 +34,7 @@ public class NestedMap {
 		}
 		Set<String>ctr=teams.keySet();
 		Iterator<String> mitr =ctr.iterator();
-		System.out.println("\n\n Teams: ");
+		System.out.println("            Teams: ");
 		System.out.println("---------------------------------");
 		while(mitr.hasNext())
 		{
