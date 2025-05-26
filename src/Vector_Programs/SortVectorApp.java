@@ -13,29 +13,20 @@ public class SortVectorApp {
 		{
 			v.add(s.nextInt());
 		}
-		System.out.println("Data Before Sorting");
-		Iterator itr=v.iterator();
-		while(itr.hasNext())
-		{
-			Object obj=itr.next();
-			System.out.println(obj);
-		}
-		//Sorting Vector
 		for(int i=0;i<v.size();i++)
 		{
 			for(int j=i+1;j<v.size();j++)
 			{
 				Object prev=v.get(i);
 				Object next=v.get(j);
-				if((int )prev>(int)next)
+				if((int)prev>(int)next)
 				{
 					v.set(i, next);
 					v.set(j, prev);
 				}
 			}
 		}
-		System.out.println("Display After Sorting");
-		itr=v.iterator();
+		Iterator itr=v.iterator();
 		while(itr.hasNext())
 		{
 			Object obj=itr.next();
