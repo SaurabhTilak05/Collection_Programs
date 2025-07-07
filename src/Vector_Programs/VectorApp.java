@@ -2,7 +2,7 @@ package Vector_Programs;
 import java.util.*;
 public class VectorApp {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 	 Scanner s=new Scanner(System.in);
 	 Vector v=new Vector();
 	 int ch;
@@ -31,11 +31,13 @@ public class VectorApp {
 			 break;
 		 case 2:
 			 Iterator itr=v.iterator();
+			 System.out.print("Data in vector:  ");
 			 while(itr.hasNext())
 			 {
 				 Object obj=itr.next();
-				 System.out.println(obj);
+				 System.out.print(obj+" ");
 			 }
+			 System.out.println("");
 			 break;
 		 case 3:
 			 System.out.println("Numer of elements in vector is  "+v.size());
