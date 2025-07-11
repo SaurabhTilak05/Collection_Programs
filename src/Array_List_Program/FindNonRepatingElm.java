@@ -26,9 +26,12 @@ public class FindNonRepatingElm {
 	
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		  ArrayList<String> list = new ArrayList<>(Arrays.asList(
-		            "apple", "banana", "apple", "mango", "banana"
-		        ));
+		System.out.println("Enter ArrayList Strings");
+		  ArrayList<String> list = new ArrayList<>();
+		  for(int i=0;i<6;i++)
+		  {
+			  list.add(s.nextLine());
+		  }
 		
 		String result=firstNonRepeat(list);
 		if(result!=null)
