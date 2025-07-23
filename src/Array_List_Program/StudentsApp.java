@@ -1,6 +1,5 @@
 //Sort student by name 
 
-
 package Array_List_Program;
 import java.util.*;
 class Students 
@@ -41,6 +40,11 @@ class SortByName implements Comparator<Students>{
 		return s1.getName().compareTo(s2.getName());
 	}
 }
+class SortByMark implements Comparator<Students>{
+	public int compare(Students s1, Students s2) {
+		return Integer.compare(s1.getMark(), s2.getMark());
+	}
+}
 public class StudentsApp {
 
 	public static void main(String[] args) {	
@@ -62,7 +66,17 @@ public class StudentsApp {
 		}
 		
 		Collections.sort(al, new SortByName());
+		System.out.println("Sorting by Name");
 		System.out.println("Id\t name \t marks");
+		
+		for(Students stud:al) {
+			System.out.println(stud);
+		}
+		
+		
+		System.out.println("Sorting by marks");
+		Collections.sort(al, new SortByMark());
+			System.out.println("Id\t name \t marks");
 		
 		for(Students stud:al) {
 			System.out.println(stud);
